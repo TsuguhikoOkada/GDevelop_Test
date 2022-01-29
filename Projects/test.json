@@ -70,6 +70,15 @@
         "name": "p1_stand.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "coinGold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "coinGold.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -116,8 +125,8 @@
           "name": "Cloud",
           "persistentUuid": "38f1fd20-28ca-4f20-bbf0-f6ca35344ea7",
           "width": 0,
-          "x": 582,
-          "y": 90,
+          "x": 576,
+          "y": 93,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -132,8 +141,8 @@
           "name": "Player",
           "persistentUuid": "9ca27fd1-8c68-4b5c-bf4b-5bfbcec6e1a2",
           "width": 0,
-          "x": 338,
-          "y": 182,
+          "x": 360,
+          "y": 264,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -190,6 +199,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGrabPlatforms": false,
               "deceleration": 1500,
@@ -200,9 +211,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
